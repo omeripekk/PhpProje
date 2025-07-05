@@ -7,6 +7,11 @@ body{
      margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 #menu{
   height: 80px;
   padding: 4px 16px;
@@ -119,12 +124,35 @@ font-size: 20px;
      text-align: center; 
      text-transform: capitalize;
      font-weight: 610;
+     height: 775px;
 }
  
 h3{
      font-size: 60px;
      font-weight: 620px;
-     color: red;
+     text-align: center;
+     color: aqua; 
+}
+
+
+.hakkimizda-container h3 {
+  margin-bottom: 80px;
+}
+
+.hakkimizda-icerik {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.img-about {
+  width: 490px;
+  height: 500px;
+  max-width: 100%;
+  border-radius: 110px;
+  margin-right: 150px;
 }
 
 .container{
@@ -145,10 +173,7 @@ h3{
      text-align: center; /* yatayda ortalıyo*/
 }
 
-.container h3{
-      text-align: center;
-      color: aqua;     
-}
+
 
 .baslikCard{
      font-size: 15px;
@@ -213,7 +238,7 @@ a:hover .social {
      transform: scale(1.7); /* % büyüt */
      cursor: pointer;       /* Fareyi el işaretine çevir */
 }
-
+     
 .sutun{
      width: 400px;
      float: left;
@@ -235,7 +260,7 @@ a:hover .social {
      height: 550px;
 }
 
-#formGroup{
+#formGroup{    
      width: 700px;
      float: left;
      height: 500px;
@@ -290,19 +315,20 @@ background-color: blue;
 
 #contact-info{
      width: 460px;
-     text-align: left;
+     text-align: right;
      float: right;
-     padding: 35px;
+     padding: 25px;
 }
 
-#contact-infoB{
+#contact-info-b{
      font-size: 27px;
-     color: white;
+     color: whitesmoke;
 }
 
-.contact-infoP{
+.contact-info-p{
      color: #ddd;
      font-size: 15px;
+     margin-bottom: 20px;
 }
 
 .footer-content {
@@ -312,64 +338,6 @@ background-color: blue;
   gap: 120px; /* yazı ile ikonlar arası boşluk */
   flex-wrap: wrap; /* küçük ekranda taşarsa alt alta geçsin */
   color: white;
-}
-}
-
-#socialfooter a {
-  margin: 0 5px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-#hakkimizda {
-  padding: 60px 20px;
-  background-color: #1a1a1a;
-  height: 750px;
-}
-
-.hakkimizda-container h3 {
-  text-align: center;
-  color: aqua;
-  margin-bottom: 30px;
-}
-
-.hakkimizda-icerik {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.img-about {
-  width: 490px;
-  height: 500px;
-  max-width: 100%;
-  border-radius: 110px;
-  margin-right: 150px;
-}
-
-.hakkimizda-yazi {
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 1.6;
-     
-      opacity: 0;
-  transform: translateX(20px); /* Başlangıç sağdan 50px kaydırılmış */
-  animation: slideInFromRight 1.2s ease forwards;
-  animation-delay: 0.3s;
-}
-
-.hakkimizda-yazi p{
-    text-align: right;
-    color: whitesmoke;
-}
-
-@keyframes slideInFromRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .card {
@@ -393,3 +361,48 @@ background-color: blue;
   display: block;
   margin-bottom: 25px;
 }
+
+.gonder-btn {
+   background: linear-gradient(to right, #3c84e6 50%, #ffffff 50%); 
+     background-size: 200% 100%;
+  background-position: right bottom;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border-radius: 6px;
+}
+
+.gonder-btn:hover {
+  background-position: left bottom;
+}
+
+
+.hakkimizda-yazi {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateX(20px); 
+  animation: slideInFromRight 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.hakkimizda-yazi p{
+    text-align: right;
+    color: whitesmoke;
+}
+
+@keyframes slideInFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#socialIcon {
+float: right;
+margin-right: 14px; 
+    }

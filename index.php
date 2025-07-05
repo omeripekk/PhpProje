@@ -99,7 +99,7 @@ ob_end_flush();
        <div id = "black"> </div>
         
        <div id="icerik"> 
-          <h2>Neden Biz?</h2>
+          <h2>Neden Biz <i class="fa-sharp fa-solid fa-question fa-beat-fade fa-lg" style="color : whitesmoke; margin-left: 1px; "></i></h2>
             <hr style="width: 310px; text-align: left; margin-left: 0;">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Quo saepe, eos possimus nisi voluptates porro 
@@ -154,7 +154,6 @@ ob_end_flush();
               </p>
               
               </div>
-                
                    
               <div class = "card item" data-merge= 1>
                 
@@ -220,10 +219,10 @@ ob_end_flush();
                   <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
                 
-                  <div class="ekip-icon"></div>
                         <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social"   style="color: #ffffff;"></i></a>
                         <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social"   style="color: #ffffff;"></i></a>
                         <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
+            
             </div>
             
             
@@ -233,10 +232,11 @@ ob_end_flush();
                   <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
                 
-                  <div class="ekip-icon"></div>
+                  
                         <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social" style="color: #ffffff;"></i></a>
                         <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
                         <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
+                      
             </div>
             
             
@@ -247,13 +247,12 @@ ob_end_flush();
                   <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
                 
-                  <div class="ekip-icon">
+                  
                         <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social" style="color: #ffffff;"></i></a>
                         <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
                         <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
-                  </div>
+              
             </div>
-    
             
         </div>
     </section>
@@ -279,29 +278,30 @@ ob_end_flush();
                 </div>
                 
                 <textarea name="mesaj"  cols="90"  placeholder="Mesajınız"   rows="10"  required class="form-control"></textarea>
-                <input type="submit"  value="Gönder"> 
+                <input type="submit"  value="Gönder" class="gonder-btn"> 
                 
               </div>
+                
                      <div id="contact-info">
-                           <h4 id="contact-infoB">İletişim Bilgilerimiz</h4>
-                         <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> 
+                           <h4 id="contact-info-b">İletişim Bilgilerimiz</h4>    
                          
-                         <p class="contact-infoP">Barbaros Mahallesi Varyap Plaza A Blok <br>No:10 Kat:12 Ataşehir / İstanbul</p>
-                           <p class="contact-infoP">0212 212 21 12</p>
-                           <p class="contact-infoP">oomeripekk@gmail.com</p>
+                           <p class="contact-info-p">Barbaros Mahallesi Varyap Plaza A Blok &nbsp; &nbsp; <i class="fa-solid fa-location-dot fa-beat-fade"   style="color: whitesmoke; "></i><br>No:10 Kat:12 Ataşehir / İstanbul &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                           <p class="contact-info-p">0212 212 21 12 &nbsp; &nbsp;<i class="fa-solid fa-phone-flip fa-beat-fade"   style="color: whitesmoke; "></i></p>
+                           <p class="contact-info-p">oomeripekk@gmail.com &nbsp; &nbsp;<i class="fa-solid fa-envelope fa-beat-fade"   style="color: whitesmoke; "></i></p>
                      </div>
+                
+                <div id="socialIcon"> 
+                    <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social" style="color: #ffffff;"></i></a>
+                    <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
+                    <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
+                </div>
                 
             </div>
             
             </form>
             
               <div class="footer-content">
-                <div id="copyright">2025 | Tüm Hakları Saklıdır</div>
-                <div id="socialfooter">
-                   <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social" style="color: #ffffff;"></i></a>
-                    <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
-                    <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
-                </div>
+                <div id="empty">2025 | Tüm Hakları Saklıdır</div>
               </div>
         
         </div>
