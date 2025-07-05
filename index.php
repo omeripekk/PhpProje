@@ -1,47 +1,46 @@
 <?php
 ob_start();
-include("DatabaseConnection.php");  //  include baska bı php dosyasını dahıl eder
+include "DatabaseConnection.php"; //  include baska bı php dosyasını dahıl eder
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if(isset($_POST["isim"], $_POST["telno"], $_POST["mail"], $_POST["konu"], $_POST["mesaj"])) {
+    if (isset($_POST["isim"], $_POST["telno"], $_POST["mail"], $_POST["konu"], $_POST["mesaj"])) {
         // formdan gelen verılerı degıskenlere atıyoruz
         $adsoyad = $_POST["isim"];
         $telefon = $_POST["telno"];
         $email = $_POST["mail"];
         $konu = $_POST["konu"];
         $mesaj = $_POST["mesaj"];
-        
+
         // $ degısken tanımlamak ıcın kullanılır
         // strlen metnın uzunlugunu belırler
         // Uzunluk kontrolleri, hata varsa redirect ile durum parametresi gönderelim
-        if(strlen($adsoyad) > 40) {
+        if (strlen($adsoyad) > 40) {
             header("Location: index.php?durum=isim_uzun"); // yonlendırıyor
-            exit;
+            exit();
         }
-        if(strlen($telefon) > 25) {
+        if (strlen($telefon) > 25) {
             header("Location: index.php?durum=telefon_uzun");
-            exit;
+            exit();
         }
-        if(strlen($email) > 50) {
+        if (strlen($email) > 50) {
             header("Location: index.php?durum=email_uzun");
-            exit;
+            exit();
         }
-        if(strlen($konu) > 45) {
+        if (strlen($konu) > 45) {
             header("Location: index.php?durum=konu_uzun");
-            exit;
+            exit();
         }
-        if(strlen($mesaj) > 500) {
+        if (strlen($mesaj) > 500) {
             header("Location: index.php?durum=mesaj_uzun");
-            exit;
+            exit();
         }
-        
-        
 
         $ekle = "INSERT INTO iletisim(adsoyad, telefon, email, konu, mesaj) VALUES (?, ?, ?, ?, ?)";
         $stmt = $baglan->prepare($ekle); // SQL sorgusunu guvenlı sekılde hazırlar calıstırmaya hazırlar
         $stmt->bind_param("sssss", $adsoyad, $telefon, $email, $konu, $mesaj); // hazırlanan sorguya degıskenler atanıyor
 
-        if($stmt->execute()) { // execute sorguyu calıstırır
+        if ($stmt->execute()) {
+            // execute sorguyu calıstırır
             header("Location: index.php?durum=ok");
             exit();
         } else {
@@ -51,7 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 
-ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
+ob_end_flush();
+
+// Tamponu boşaltır ve çıktı gönderilir
 ?>
 
 
@@ -148,8 +149,8 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
               <div class = "card item" data-merge= 1>
                 
               <img src = "img/CSS.jpg" alt = "" class= "img-fluid">
-              <h5 class="baslikcard">CSS Eğitimi</h5>
-              <p class= "cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
+              <h5 class="baslikCard">CSS Eğitimi</h5>
+              <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
               
               </div>
@@ -159,7 +160,7 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
                 
               <img src = "img/HTML.jpg" alt = "" class= "img-fluid">
               <h5 class="baslikcard">HTML Eğitimi</h5>
-              <p class= "cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
+              <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
               
               </div>
@@ -169,7 +170,7 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
                 
               <img src = "img/JS.png" alt = "" class= "img-fluid">
               <h5 class="baslikcard">JAVASCRIPT Eğitimi</h5>
-              <p class= "cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
+              <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
               
               </div>
@@ -178,7 +179,7 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
                 
               <img src = "img/flutter.jpeg" alt = "" class= "img-fluid">
               <h5 class="baslikcard">FLUTTER Eğitimi</h5>
-              <p class= "cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
+              <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
               
               </div>
@@ -187,7 +188,7 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
                 
               <img src = "img/java.png" alt = "" class= "img-fluid">
               <h5 class="baslikcard">JAVA Eğitimi</h5>
-              <p class= "cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
+              <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
               
               </div>
@@ -196,7 +197,7 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
                 
               <img src = "img/PHP.jpeg" alt = "" class= "img-fluid">
               <h5 class="baslikcard">PHP Eğitimi</h5> 
-              <p class= "cardp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi   consectetur adipisicing elit. Animi
+              <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi   consectetur adipisicing elit. Animi
               </p>
               
               </div>    
@@ -215,8 +216,8 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
             
             <div class="sutun-sol-sag">
                   <img src ="img/foto.jpg" alt= "" class="img-fluid oval">
-                  <h4 class="ekipisim">Ömer İpek</h4>
-                  <p class="ekippp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
+                  <h4 class="ekip-isim">Ömer İpek</h4>
+                  <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
                 
                   <div class="ekip-icon"></div>
@@ -228,8 +229,8 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
             
             <div class="sutun">
                   <img src ="img/foto.jpg" alt= "" class="img-fluid oval">
-                  <h4 class="ekipisim">Ömer İpek</h4>
-                  <p class="ekippp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
+                  <h4 class="ekip-isim">Ömer İpek</h4>
+                  <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
                 
                   <div class="ekip-icon"></div>
@@ -242,8 +243,8 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
             <div class="sutun-sol-sag">
                   
                 <img src ="img/foto.jpg" alt= "" class="img-fluid oval">
-                  <h4 class="ekipisim">Ömer İpek</h4>
-                  <p class="ekippp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
+                  <h4 class="ekip-isim">Ömer İpek</h4>
+                  <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
                 
                   <div class="ekip-icon">
@@ -264,31 +265,30 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
             
             <form action="index.php" method="post">
             
-            <div id="iletisimopak"> 
-              <div id="formgroup">
+            <div id="iletisimWrapper"> 
+              <div id="formGroup">
                 
-                <div id="solform"> 
+                <div id="solForm"> 
                    <input type="text"   name="isim"   placeholder="Ad Soyad"   required class="form-control"> 
-                   <input type="text"   name="telno"   placeholder="Telefon Numarası"   required class="form-control"> 
+                   <input type="text"   name="telno"   placeholder="Telefon"   required class="form-control"> 
                 </div>
                 
-                <div id="sagform"> 
-                   <input type="email"   name="mail"   placeholder="E-posta Adresiniz"   required class="form-control">  
-                   <input type="text"   name="konu"   placeholder="Konu Başlığı"   required class="form-control"> 
+                <div id="sagForm"> 
+                   <input type="email"   name="mail"   placeholder="Email"   required class="form-control">  
+                   <input type="text"   name="konu"   placeholder="Konu"   required class="form-control"> 
                 </div>
                 
-                <textarea name="mesaj"  cols="90"  placeholder="Mesaj Giriniz"   rows="10"  required class="form-control"></textarea>
+                <textarea name="mesaj"  cols="90"  placeholder="Mesajınız"   rows="10"  required class="form-control"></textarea>
                 <input type="submit"  value="Gönder"> 
                 
               </div>
-                     <div id="adres">
-                           <h4 id="adresbaslik">Adres : </h4>
-                           <p class="adresp">Barbaros Mahallesi</p>
-                           <p class="adresp">Varyap Plaza A Blok </p>
-                           <p class="adresp">No:10 Kat:12</p>
-                           <p class="adresp">Ataşehir / İstanbul</p>
-                           <p class="adresp">0212 212 21 12</p>
-                           <p class="adresp">E-posta : oomeripekk@gmail.com</p>
+                     <div id="contact-info">
+                           <h4 id="contact-infoB">İletişim Bilgilerimiz</h4>
+                         <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> 
+                         
+                         <p class="contact-infoP">Barbaros Mahallesi Varyap Plaza A Blok <br>No:10 Kat:12 Ataşehir / İstanbul</p>
+                           <p class="contact-infoP">0212 212 21 12</p>
+                           <p class="contact-infoP">oomeripekk@gmail.com</p>
                      </div>
                 
             </div>
@@ -309,30 +309,28 @@ ob_end_flush(); // Tamponu boşaltır ve çıktı gönderilir
     </section>
     
     
-<?php
-
-// isset() Değişken var mı diye bakar
-if (isset($_GET['durum'])) {
-    switch ($_GET['durum']) {
-        case 'ok':
+<?php // isset() Değişken var mı diye bakar
+if (isset($_GET["durum"])) {
+    switch ($_GET["durum"]) {
+        case "ok":
             $msg = "Mesajınız başarıyla gönderildi!";
-            break; 
-        case 'hata':
+            break;
+        case "hata":
             $msg = "Mesaj gönderilirken bir hata oluştu!";
             break;
-        case 'isim_uzun':
+        case "isim_uzun":
             $msg = "Ad Soyad 40 karakterden uzun olamaz.";
             break;
-        case 'telefon_uzun':
+        case "telefon_uzun":
             $msg = "Telefon numarası 25 karakterden uzun olamaz.";
             break;
-        case 'email_uzun':
+        case "email_uzun":
             $msg = "E-posta adresi 50 karakterden uzun olamaz.";
             break;
-        case 'konu_uzun':
+        case "konu_uzun":
             $msg = "Konu 45 karakterden uzun olamaz.";
             break;
-        case 'mesaj_uzun':
+        case "mesaj_uzun":
             $msg = "Mesaj 500 karakterden uzun olamaz.";
             break;
         default:
@@ -347,8 +345,7 @@ if (isset($_GET['durum'])) {
             }
         </script>";
     }
-}
-?>
+} ?>
 
     
   <script src ="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>  

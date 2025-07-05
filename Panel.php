@@ -35,7 +35,7 @@
   <tr>
     <th>Ad Soyad</th>
     <th>Telefon</th>
-    <th>E-posta</th>
+    <th>Email</th>
     <th>Konu</th>
     <th>Mesaj</th>
   </tr>

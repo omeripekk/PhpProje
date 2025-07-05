@@ -72,12 +72,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 session_start(); 
 
-
 $admins = [
     "Omer" => "Omer123",
     "Pelin" => "Pelin11",
     "Faruk" => "Faruk789",
-    "Fude" => "Sude321"
+    "Sude" => "Sude321"
 ];
 
 // Formdan 'usrnm' ve 'psw' verileri gönderilmiş mi diye kontrol edilir bunu isset() yapar

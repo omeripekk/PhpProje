@@ -14,7 +14,7 @@ body{
   top: 0;           
   left: 0;
   width: 100%;      
-  background-color: #fff; 
+  background-color: #1f1f1f;; 
   z-index: 1000;
 }
 
@@ -33,7 +33,7 @@ body{
      font-size: 39px;
      font-weight: 540; 
      line-height: 64px;
-     color: black;
+     color: whitesmoke;
      float: left;
      padding-left: 80px;
      
@@ -49,14 +49,14 @@ nav a {
    text-decoration: none; /* Alt çizgiyi kaldırır */
     margin: 0 20px; /* Linkler arası boşluk */
     font-weight: bold;
-     color: black;    
+     color: whitesmoke;    
 }
 
 #menubizeulasin{
      font-size: 19px;  /* boyut */
      font-weight: 900; /* kalınlık */
      line-height: 74px;
-     color: black;
+     color: whitesmoke;
      float: right;
      padding-right: 80px;
       text-decoration: none;
@@ -93,21 +93,17 @@ nav a:link{
 
 
 #icerik{
- 
-      width: 50%;
-  text-align: left;
-     
-       opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.2s ease forwards;
-  animation-delay: 0.3s;
-
-     
-     position: absolute;
-     top: 37%;
-     left: 12%;
-     color: aqua;
-     font-size: 20px;
+width: 50%;
+text-align: left;
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 1.2s ease forwards;
+animation-delay: 0.3s;
+position: absolute;
+top: 37%;
+left: 12%;
+color: whitesmoke;
+font-size: 20px;
 }
 
 @keyframes fadeInUp {
@@ -154,14 +150,14 @@ h3{
       color: aqua;     
 }
 
-.baslikcard{
+.baslikCard{
      font-size: 15px;
      color: black;
      margin: 10px 0 5px;
      
 }
 
-.cardp{
+.cardP{
      color: #888;
      font-size: 14px;
   line-height: 1.5;
@@ -189,13 +185,13 @@ h3{
      border-radius: 50%;
 }
 
-.ekipisim{
+.ekip-isim{
      color: aqua;
      font-size: 25px;
      margin-bottom: 12px;
 }
 
-.ekippp{
+.ekipYazi{
      color: #888;
      font-size: 18px;    
 }
@@ -226,35 +222,33 @@ a:hover .social {
 
 #iletisim{
     background-color: #1a1a1a;
-     color: #1a1a1a;
      height: auto;
      padding: 50px; 
      text-align: center;
 }
 
-#iletisimopak{
-   /*  background-color: #2a2d34; */
-  background: rgba(255, 255, 255, 0.2); 
+#iletisimWrapper{
+     background-color: #2d2d2d;
     padding: 30px 20px;
      border-radius: 5px;
      margin-bottom: 50px;
      height: 550px;
 }
 
-#formgroup{
+#formGroup{
      width: 700px;
      float: left;
      height: 500px;
      text-align: left;
 }
 
-#solform{
+#solForm{
      width: 50%;
      float: left;
      padding-right: 5px;
 }
 
-#sagform{
+#sagForm{
      width: 50%;
      float: right;
      padding-left: 5px;
@@ -294,19 +288,19 @@ background-color: blue;
 }
 
 
-#adres{
+#contact-info{
      width: 460px;
      text-align: left;
      float: right;
      padding: 35px;
 }
 
-#adresbaslik{
+#contact-infoB{
      font-size: 27px;
      color: white;
 }
 
-.adresp{
+.contact-infoP{
      color: #ddd;
      font-size: 15px;
 }
@@ -318,6 +312,7 @@ background-color: blue;
   gap: 120px; /* yazı ile ikonlar arası boşluk */
   flex-wrap: wrap; /* küçük ekranda taşarsa alt alta geçsin */
   color: white;
+}
 }
 
 #socialfooter a {
@@ -358,7 +353,6 @@ background-color: blue;
   max-width: 600px;
   font-size: 18px;
   line-height: 1.6;
-  color: white;
      
       opacity: 0;
   transform: translateX(20px); /* Başlangıç sağdan 50px kaydırılmış */
@@ -368,7 +362,7 @@ background-color: blue;
 
 .hakkimizda-yazi p{
     text-align: right;
-    color: aqua;
+    color: whitesmoke;
 }
 
 @keyframes slideInFromRight {
@@ -388,7 +382,7 @@ background-color: blue;
   border-radius: 10px;
   text-align: center;
   margin: 10px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .card img {
