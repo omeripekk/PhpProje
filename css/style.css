@@ -13,14 +13,14 @@ html {
 
 
 #menu{
-  height: 80px;
-  padding: 4px 16px;
-  position: fixed;  
-  top: 0;           
+height: 80px;
+padding: 4px 16px;
+position: fixed;  
+top: 0;           
   left: 0;
   width: 100%;      
-  background-color: #1f1f1f;; 
-  z-index: 1000;
+  background-color: #1f1f1f; 
+z-index: 1000;
 }
 
 
@@ -35,18 +35,18 @@ html {
 }
 
 #logo{
-     font-size: 39px;
-     font-weight: 540; 
-     line-height: 64px;
-     color: whitesmoke;
-     float: left;
-     padding-left: 80px;
+ font-size: 39px;
+ font-weight: 540; 
+ line-height: 64px;
+ color: whitesmoke;
+ float: left;
+ padding-left: 80px;
      
 }
 
 nav{
-     text-align: center; /* ortalar */
-     line-height: 70px;
+text-align: center; /* ortalar */
+line-height: 70px;
      font-size: 14px;
 }
 
@@ -61,9 +61,9 @@ nav a {
      font-size: 19px;  /* boyut */
      font-weight: 900; /* kalınlık */
      line-height: 74px;
-     color: whitesmoke;
-     float: right;
-     padding-right: 80px;
+ color: whitesmoke;
+ float: right;
+padding-right: 80px;
       text-decoration: none;
 }
 
@@ -77,23 +77,16 @@ nav a {
 
 
 nav a:link{
-     text-decoration: none; /* Linklerin altı çizili olmasın */
-     margin-right: 40px;
+margin-right: 40px;
 }
 
 
 #anasayfa{
      height: 620px;
-     background-color:  #1a1a1a;
-      display: flex;
+background-color:  #1a1a1a;
+display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-
-#icerik.goster {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 
@@ -129,7 +122,7 @@ font-size: 20px;
  
 h3{
      font-size: 60px;
-     font-weight: 620px;
+     font-weight: 220;
      text-align: center;
      color: aqua; 
 }
@@ -167,10 +160,10 @@ h3{
 }
 
 #egitimler{
-     background-color: #1a1a1a;
-     height: 750px;
-     padding: 50px;
-     text-align: center; /* yatayda ortalıyo*/
+background-color: #1a1a1a;
+height: 750px;
+padding: 50px;
+text-align: center; /* yatayda ortalıyo*/
 }
 
 
@@ -193,16 +186,16 @@ h3{
 }
 
 #ekip{
-     background-color: #1a1a1a ;
-     padding: 50px;
-     height: 950px;
+background-color: #1a1a1a ;
+padding: 50px;
+  height: 950px;
      text-align: center;
 }
 
 
 .sutun-sol-sag{
      width: 400px;
-     float: left;
+  float: left;
      padding: 70px;
 }
 
@@ -225,33 +218,28 @@ a .social{
      color: white;
      border: 2px solid white;
      padding: 10px;
-     width: 50px;
-     border-radius: 5px;
+width: 50px;
+  border-radius: 5px;
      margin: 5px 10px;
-     transition: transform 0.3s ease;  /* Geçiş efekti */
-     display: inline-block; /* Büyürken daha düzgün görünür */
+  transition: transform 0.3s ease;  /* Geçiş efekti */
+  display: inline-block; /* Büyürken daha düzgün görünür */
 }
-
-
 a:hover .social {
      background-color: #888;
      transform: scale(1.7); /* % büyüt */
      cursor: pointer;       /* Fareyi el işaretine çevir */
-}
-     
+}    
 .sutun{
      width: 400px;
      float: left;
      padding: 45px;
 }
-
 #iletisim{
     background-color: #1a1a1a;
      height: auto;
      padding: 50px; 
      text-align: center;
 }
-
 #iletisimWrapper{
      background-color: #2d2d2d;
     padding: 30px 20px;
@@ -259,7 +247,6 @@ a:hover .social {
      margin-bottom: 50px;
      height: 550px;
 }
-
 #formGroup{    
      width: 700px;
      float: left;
@@ -268,9 +255,9 @@ a:hover .social {
 }
 
 #solForm{
-     width: 50%;
-     float: left;
-     padding-right: 5px;
+width: 50%;
+float: left;
+ padding-right: 5px;
 }
 
 #sagForm{
@@ -285,12 +272,11 @@ a:hover .social {
      font-size: 15px;
      line-height: 1.5;
      color: #495057;
-     background-color: white;
-     margin: 10px;
-     border-radius: 5px;
+background-color: white;
+margin: 10px;
+border-radius: 5px;
      border: 1px solid #ced4da;
 }
-
 
 input[type="submit"]{
      color: black;
@@ -336,7 +322,7 @@ background-color: blue;
   align-items: center;
   justify-content: center;
   gap: 120px; /* yazı ile ikonlar arası boşluk */
-  flex-wrap: wrap; /* küçük ekranda taşarsa alt alta geçsin */
+  flex-wrap: wrap; 
   color: white;
 }
 
@@ -363,13 +349,13 @@ background-color: blue;
 }
 
 .gonder-btn {
-   background: linear-gradient(to right, #3c84e6 50%, #ffffff 50%); 
+ background: linear-gradient(to right, #3c84e6 50%, #ffffff 50%); 
      background-size: 200% 100%;
   background-position: right bottom;
-  border: none;
-  color: black;
-  padding: 12px 24px;
-  font-size: 16px;
+border: none;
+color: black;
+padding: 12px 24px;
+font-size: 16px;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   border-radius: 6px;

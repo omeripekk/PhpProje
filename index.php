@@ -62,22 +62,14 @@ ob_end_flush();
     <meta charset="UTF-8" />
     
     <title>Lorem Ipsum</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
-    
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
-    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
@@ -96,8 +88,6 @@ ob_end_flush();
     </section>
     
     <section id = "anasayfa">
-       <div id = "black"> </div>
-        
        <div id="icerik"> 
           <h2>Neden Biz <i class="fa-sharp fa-solid fa-question fa-beat-fade fa-lg" style="color : whitesmoke; margin-left: 1px; "></i></h2>
             <hr style="width: 310px; text-align: left; margin-left: 0;">
@@ -137,7 +127,6 @@ ob_end_flush();
             </div>
         </div>
     </section>
-        
     
     <section id = "egitimler">
         <div class = "container">
@@ -147,58 +136,46 @@ ob_end_flush();
                 
                 
               <div class = "card item" data-merge= 1>
-                
               <img src = "img/CSS.jpg" alt = "" class= "img-fluid">
               <h5 class="baslikCard">CSS Eğitimi</h5>
               <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
-              
               </div>
                    
               <div class = "card item" data-merge= 1>
-                
               <img src = "img/HTML.jpg" alt = "" class= "img-fluid">
-              <h5 class="baslikcard">HTML Eğitimi</h5>
+              <h5 class="baslikCard">HTML Eğitimi</h5>
               <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
-              
               </div>
                 
                    
               <div class = "card item" data-merge= 1>
-                
               <img src = "img/JS.png" alt = "" class= "img-fluid">
-              <h5 class="baslikcard">JAVASCRIPT Eğitimi</h5>
+              <h5 class="baslikCard">JAVASCRIPT Eğitimi</h5>
               <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
-              
               </div>
                 
               <div class = "card item" data-merge= 1>
-                
               <img src = "img/flutter.jpeg" alt = "" class= "img-fluid">
-              <h5 class="baslikcard">FLUTTER Eğitimi</h5>
+              <h5 class="baslikCard">FLUTTER Eğitimi</h5>
               <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
-              
               </div>
                 
               <div class = "card item" data-merge= 1>
-                
               <img src = "img/java.png" alt = "" class= "img-fluid">
-              <h5 class="baslikcard">JAVA Eğitimi</h5>
+              <h5 class="baslikCard">JAVA Eğitimi</h5>
               <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi  consectetur adipisicing elit. Animi
               </p>
-              
               </div>
                 
               <div class = "card item" data-merge= 1>
-                
               <img src = "img/PHP.jpeg" alt = "" class= "img-fluid">
-              <h5 class="baslikcard">PHP Eğitimi</h5> 
+              <h5 class="baslikCard">PHP Eğitimi</h5> 
               <p class= "cardP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!  consectetur adipisicing elit. Animi   consectetur adipisicing elit. Animi
               </p>
-              
               </div>    
               
             </div>
@@ -212,17 +189,14 @@ ob_end_flush();
         <div class="container">
             
             <h3>Ekip</h3>
-            
             <div class="sutun-sol-sag">
                   <img src ="img/foto.jpg" alt= "" class="img-fluid oval">
                   <h4 class="ekip-isim">Ömer İpek</h4>
                   <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
-                
                         <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social"   style="color: #ffffff;"></i></a>
                         <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social"   style="color: #ffffff;"></i></a>
                         <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
-            
             </div>
             
             
@@ -231,12 +205,9 @@ ob_end_flush();
                   <h4 class="ekip-isim">Ömer İpek</h4>
                   <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
-                
-                  
                         <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social" style="color: #ffffff;"></i></a>
                         <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
                         <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
-                      
             </div>
             
             
@@ -246,24 +217,17 @@ ob_end_flush();
                   <h4 class="ekip-isim">Ömer İpek</h4>
                   <p class="ekipYazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, minus!
                   </p>
-                
-                  
                         <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-ipek-374762334/"  target="_blank"><i class="fa-brands fa-linkedin-in social" style="color: #ffffff;"></i></a>
                         <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
                         <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
-              
             </div>
-            
         </div>
     </section>
     
     <section id="iletisim">
         <div class="container">
-
              <h3>İletişim</h3>
-            
             <form action="index.php" method="post">
-            
             <div id="iletisimWrapper"> 
               <div id="formGroup">
                 
@@ -295,19 +259,16 @@ ob_end_flush();
                     <a href="mailto:oomeripekk@gmail.com"><i class="fa-brands fa-google-plus-g social" style="color: #ffffff;"></i></a>
                     <a href="https://x.com/oomeripekk"  target="_blank"><i class="fa-brands fa-x-twitter social"  style="color: #ffffff;"></i></a>
                 </div>
-                
             </div>
-            
             </form>
             
               <div class="footer-content">
-                <div id="empty">2025 | Tüm Hakları Saklıdır</div>
+                <div id="empty">© 2025 Ömer Faruk İpek. All rights reserved.</div>
               </div>
         
         </div>
-   
     </section>
-    
+
     
 <?php // isset() Değişken var mı diye bakar
 if (isset($_GET["durum"])) {
